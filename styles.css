@@ -1,0 +1,45 @@
+:root{--ivory:#faf7f0;--green:#1f5c3d;--sage:#dbe7de;--ink:#22301f;--mut:#5c6b60;--line:#dbe2d5;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.7}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:var(--white);padding:8px}
+header{background:var(--white);border-bottom:1px solid var(--line)}nav{max-width:880px;margin:0 auto;padding:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.brand{font-weight:800;color:var(--green);text-decoration:none}nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}nav a{color:var(--ink);text-decoration:none}nav a:hover{text-decoration:underline}
+main{max-width:880px;margin:0 auto;padding:24px 18px 48px}.crumbs{font-size:14px;color:var(--mut);margin-bottom:16px}
+h1{font-size:30px;line-height:1.35;margin:8px 0 12px}h2{font-size:22px;margin:32px 0 8px}h3{font-size:18px;margin:24px 0 8px}
+.hero{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:28px}.photo-placeholder{border:2px dashed var(--green);background:var(--sage);border-radius:16px;padding:32px;text-align:center;color:var(--mut);margin:20px 0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.cta a{background:var(--green);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}.cta a.secondary{background:var(--white);color:var(--green);border:2px solid var(--green)}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0}.note{background:var(--sage);border-radius:12px;padding:14px 16px}
+footer{border-top:1px solid var(--line);background:var(--white);padding:24px 18px;text-align:center;color:var(--mut);font-size:14px}footer a{color:var(--green)}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid var(--line);padding:10px;text-align:left}img{max-width:100%;height:auto}
+@media(min-width:700px){h1{font-size:36px}main{padding:32px 24px 64px}}
+
+/* Premium main page (local redesign, 2026-10-30) */
+.eyebrow{font-size:13px;letter-spacing:.08em;font-weight:800;color:var(--green);text-transform:uppercase;margin:0 0 8px}
+.hero-premium{background:linear-gradient(135deg,#143d27,#1f5c3d 60%,#2f7d4f);color:#fff;border-radius:24px;padding:28px 22px;display:grid;gap:24px;box-shadow:0 18px 40px rgba(20,61,39,.22)}
+.hero-premium .eyebrow{color:#cfe6d6}
+.hero-premium h1{font-size:34px;line-height:1.25;margin:0 0 14px;color:#fff}
+.hero-lead{color:#e6f1e8;font-size:17px;line-height:1.7;margin:0}
+.hero-premium .cta a.kakao{background:#fee500;color:#3c1e1e}
+.hero-premium .cta a.secondary-light{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+.hero-note{font-size:13px;color:#cfe6d6;line-height:1.6;margin:18px 0 0}
+.hero-photo{margin:0}
+.hero-photo img{width:100%;height:auto;border-radius:20px;box-shadow:0 14px 30px rgba(0,0,0,.25);display:block}
+.hero-photo figcaption{font-size:13px;color:#cfe6d6;margin-top:10px;line-height:1.5}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.stats>div{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px}
+.stats strong{display:block;font-size:16px;color:var(--green);line-height:1.4}
+.stats span{font-size:13px;color:var(--mut);line-height:1.5}
+.service-grid{display:grid;gap:14px}
+.service-card{border-top:4px solid var(--green)}
+.service-num{font-size:13px;font-weight:800;color:var(--green);margin:0 0 6px}
+.steps-premium{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps-premium li{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px}
+.steps-premium strong{display:block;margin-bottom:4px}
+.steps-premium span{color:var(--mut);font-size:14px;line-height:1.5}
+.faq-teaser{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px;margin-top:32px}
+@media(min-width:700px){
+  .hero-premium{grid-template-columns:1.15fr .85fr;align-items:center;padding:40px}
+  .hero-premium h1{font-size:44px}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .service-grid{grid-template-columns:repeat(3,1fr)}
+  .steps-premium{grid-template-columns:repeat(3,1fr)}
+}
